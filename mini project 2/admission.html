@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Learning Academy Admission Form</title>
+</head>
+
+<body>
+    <section id="header">
+        <h1>Smart Learning Academy Admission Form</h1>
+        <p><b>Fill | Submit | Learn | Grow</b></p>
+        <p><a href="index.html">Home</a> | <a href="courses.html">Courses</a> | <a href="admission.html"><font color="purple">Admission</font></a>
+        </p>
+        <hr>
+    </section>
+    <h2>Admission Instructions</h2>
+    <p>Please fill the admission form carefully. This form collects student details, course interest, preferred class
+        timing, and document information.</p>
+    <blockquote>Correct information helps the academy contact students quickly and guide them to the right course.
+    </blockquote>
+    <h3>Before Filling the Form</h3>
+    <ul>
+        <li>Check the available courses</li>
+        <li>Keep your email and phone number ready</li>
+        <li>Keep ID proof ready for upload</li>
+        <li>Select your preferred course</li>
+    </ul>
+    <h3>Admission Process</h3>
+    <ol>
+        <li>Fill basic details</li>
+        <li>Select courses and learning mode</li>
+        <li>Upload required documents</li>
+        <li>Submit the form</li>
+        <li>Wait for confirmation</li>
+    </ol>
+    <hr>
+    <h2>Admission Form</h2>
+    <form action="submit.html" method="get">
+        <h3>Basic Details</h3>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter full name" size="30"><br><br>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Only letters and numbers"><br><br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com"><br><br>
+        <label for="password">Create Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter 10 digit number"><br><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="10" max="60"><br><br>
+        <h3>Gender</h3>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+        <h3>Course Interested</h3>
+        <input type="checkbox" id="java" name="course" value="Java Full Stack Development">
+        <label for="java">Java Full Stack Development</label><br>
+        <input type="checkbox" id="python" name="course" value="Python Full Stack Development">
+        <label for="python">Python Full Stack Development</label><br>
+        <input type="checkbox" id="frontend" name="course" value="Frontend Development">
+        <label for="frontend">Frontend Development</label><br>
+        <input type="checkbox" id="webdesign" name="course" value="Web Design Basics">
+        <label for="webdesign">Web Design Basics</label><br><br>
+        <h3>Learning Mode</h3>
+        <input type="radio" id="online" name="mode" value="Online">
+        <label for="online">Online</label><br>
+        <input type="radio" id="offline" name="mode" value="Offline">
+        <label for="offline">Offline</label><br><br>
+        <h3>Class Details</h3>
+        <label for="joindate">Preferred Joining Date:</label><br>
+        <input type="date" id="joindate" name="joindate"><br><br>
+        <label for="classtime">Preferred Class Time:</label><br>
+        <input type="time" id="classtime" name="classtime"><br><br>
+        <label for="interest">Interest Level:</label><br>
+        <input type="range" id="interest" name="interest" min="0" max="10"><br><br>
+        <h3>Upload Document</h3>
+        <label for="idproof">Upload ID Proof:</label><br>
+        <input type="file" id="idproof" name="idproof"><br><br>
+        <h3>System Information</h3>
+        <label for="studentid">Student ID:</label><br>
+        <input type="text" id="studentid" name="studentid" value="STU001" readonly><br><br>
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country" value="India" disabled><br><br>
+        <h3>Terms and Conditions</h3>
+        <input type="checkbox" id="terms" name="terms" value="agreed">
+        <label for="terms">I agree to the academy terms and conditions.</label><br><br>
+        <h3>Form Buttons</h3>
+        <input type="submit" value="Submit Admission Form">
+        <input type="reset" value="Clear Form">
+        <button type="button">Help</button>
+    </form>
+    <hr>
+    <h2>Form Rules</h2>
+    <pre>
+FullName:<br>&emsp14;&emsp14;Minimum 3 characters and maximum 30 characters.
+Username:<br>&emsp14;&emsp14;Only letters and numbers allowed. 5 to 15 characters.
+Password:<br>&emsp14;&emsp14;Must be between 8 and 16 characters.
+Phone Number:<br>&emsp14;&emsp14;Must contain exactly 10 digits.
+Age:<br>&emsp14;&emsp14;Must be between 10 and 60.
+    </pre>
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="courses.html">View Courses</a></li>
+        <li><a href="mailto:smartacademy@example.com">Send Email</a></li>
+        <li><a href="tel:9876543210">Call Academy</a></li>
+        <li><a href="#header">Back to Top</a></li>
+    </ul>
+    <hr>
+    <p><small>2026 Smart Learning Academy Admission Page</small></p>
+</body>
+
+</html>
