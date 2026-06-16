@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fest Registration Form</title>
+</head>
+
+<body>
+
+    <section id="header">
+        <h1>Fest Registration Form</h1>
+        
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="events.html">Events</a> |
+            <a href="schedule.html">Schedule</a> |
+            <a href="registration.html"><font color="purple">Registration</font></a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <hr>
+    </section>
+
+    <h2>Registration Instructions</h2>
+
+    <p>
+        Fill the form carefully to register for College Cultural Fest 2026. Make sure your name, email,phone number and selected events are correct.
+    </p>
+
+    <blockquote>
+        Registration is important because it helps the event team prepare participant lists, ID cards, certificates and event arrangements.
+    </blockquote>
+    <h2>Registration Form</h2>
+
+    <form action="success.html" method="post" enctype="multipart/form-data">
+
+        <h3>Student Details</h3>
+
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" placeholder="Enter Full name"><br><br>
+
+        <label>Username:</label><br>
+        <input type="text" name="username" placeholder="Letters and numbers only" pattern="[a-zA-Z0-9]+"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="example@gmail.com"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" placeholder="8 to 16 characters"><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone" placeholder="10 digit number" minlength="10" maxlength="10" pattern="[0-9]{10}"><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age"><br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob"><br><br>
+
+        <label>Preferred Event Time:</label><br>
+        <input type="time" name="event-time"><br><br>
+
+        <h3>Gender</h3>
+
+        <input type="radio" name="gender" value="Male"> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br>
+        <input type="radio" name="gender" value="Other"> Other<br><br>
+
+        <h3>Events Interested</h3>
+
+        <input type="checkbox" name="event" value="Dance Competition"> Dance Competition<br>
+        <input type="checkbox" name="event" value="Singing Competition"> Singing Competition<br>
+        <input type="checkbox" name="event" value="Coding Performance"> Coding Performance<br>
+        <input type="checkbox" name="event" value="Drama Contest"> Drama Contest<br>
+        <input type="checkbox" name="event" value="Photography Contest"> Photography Contest<br><br>
+        <h3>Department</h3>
+
+        <input type="radio" name="department" value="CSE"> CSE<br>
+        <input type="radio" name="department" value="ECE"> ECE<br>
+        <input type="radio" name="department" value="EEE"> EEE<br>
+        <input type="radio" name="department" value="Mechanical"> Mechanical<br>
+        <input type="radio" name="department" value="Civil"> Civil<br><br>
+
+        <h3>Performace details</h3>
+
+        <label>Team Name:</label><br>
+        <input type="text" name="teamname" placeholder="Enter team name"><br><br>
+
+        <label>Number of Team Members:</label><br>
+        <input type="number" name="members"><br><br>
+
+        <label>Confidence Level:</label><br>
+        <input type="range" min="0" max="10"><br><br>
+
+        <h3>File Upload</h3>
+
+        <label>Upload College ID Proof:</label><br>
+        <input type="file"><br><br>
+
+        <label>Upload Performance File:</label><br>
+        <input type="file"><br><br>
+
+        <h3>System Information</h3>
+
+        <label>Registration ID:</label><br>
+        <input type="text" value="FEST2026REG001" readonly><br><br>
+
+        <label>College Name:</label><br>
+        <input type="text" value="ABC College" disabled><br><br>
+
+        <h3>Terms and Conditions</h3>
+
+        <input type="checkbox">
+        I agree to follow the fest rules and college instructions.
+
+        <br><br>
+        <h3>Form Buttons</h3>
+        <input type="submit" value="Submit Registration">
+        <input type="reset" value="Clear Form">
+        <input type="button" value="Help">
+
+    </form>
+
+    <h2>Form Rules</h2>
+
+    <pre>
+Full Name:
+    Minimum 3 characters and maximum 30 characters.
+
+Username:
+    only letters and numbers allowed, 5 to 15 characters.
+
+Password:
+    Must be between 8 and 16 characters.
+
+Phone Number:
+    Must contain 10 digits.
+
+Age:
+    Must be between 16 and 30.
+    </pre>
+    <hr>
+    <a href="#header">Back to Top</a>
+    <p><small>2026 College Cultural Fest Registration Page</small></p>
+
+</body>
+
+</html>
